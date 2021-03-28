@@ -38,6 +38,44 @@ class MyDocument extends Document {
         `,
 						}}
 					></script>
+					<script
+						type="application/ld+json"
+						dangerouslySetInnerHTML={{
+							__html: `
+                        
+                        
+{
+   "@context": "https://schema.org/",
+   "@type": "PodcastEpisode",
+   "url": "https://lemondealacarte.vercel.app/",
+   "name": "LE Rwanda, entre histoire et modernité",
+   "datePublished": "2020-03-28",
+   "timeRequired": "PT15M",
+   "description": "Le Rwanda n’est pas le premier pays auquel on pense pour un voyage en Afrique. Pour beaucoup, il évoque le génocide. Mais cette tragédie a eu lieu, il y a plus de 20 ans. Aujourd’hui, du pire endroit sur terre, le Rwanda est devenu l’un des pays les plus sûrs d’Afrique.",
+   "associatedMedia": {
+     "@type": "MediaObject",
+     "contentUrl": "https://lemondealacarte.vercel.app/images/logo.jpg"
+   },
+   "partOfSeries": {
+     "@type": "PodcastSeries",
+     "name": "Le Monde à La Carte",
+     "url": "https://lemondealacarte.vercel.app/"
+   }
+ }
+}
+    `,
+						}}
+					></script>
+
+					<meta name="twitter:card" content="player" />
+					<meta name="twitter:site" content="@MatteoGauthier" />
+					<meta name="twitter:title" content="Le Rwanda, entre histoire et modernité" />
+					<meta
+						name="twitter:description"
+						content="Le Rwanda n’est pas le premier pays auquel on pense pour un voyage en Afrique. Pour beaucoup, il évoque le génocide. Mais cette tragédie a eu lieu, il y a plus de 20 ans. Aujourd’hui, du pire endroit sur terre, le Rwanda est devenu l’un des pays les plus sûrs d’Afrique."
+					/>
+					<meta name="twitter:image" content="https://lemondealacarte.vercel.app/images/logo.jpg" />
+					<meta name="twitter:player" content="https://lemondealacarte.vercel.app/" />
 				</Head>
 				<body className="bg-opacity-50 bg-pink-50">
 					<Main />
