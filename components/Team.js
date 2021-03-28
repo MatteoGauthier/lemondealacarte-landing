@@ -30,7 +30,7 @@ export const Team = () => {
 						</p> */}
 					</div>
 				</a>
-				<div
+				<a
 					href="https://instagram.com/can10.frd"
 					className="flex flex-col items-center text-center md:text-left md:items-stretch"
 				>
@@ -43,7 +43,7 @@ export const Team = () => {
 							and obsession.
 						</p> */}
 					</div>
-				</div>
+				</a>
 				<a
 					href="https://instagram.com/matteogauthier_"
 					className="flex flex-col items-center text-center md:text-left md:items-stretch"
