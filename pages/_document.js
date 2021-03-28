@@ -17,7 +17,7 @@ class MyDocument extends Document {
 						href="https://anchor.fm/s/53ca1838/podcast/rss"
 					/>
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
-					<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+					<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
 					<title>
 						Le Monde à La Carte - Podcast sur le voyage et la culture, découvrez votre planète sans changer d'hémisphère
 					</title>
