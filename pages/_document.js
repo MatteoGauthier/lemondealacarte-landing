@@ -10,6 +10,7 @@ class MyDocument extends Document {
 		return (
 			<Html>
 				<Head>
+					<link type="application/rss+xml" rel="alternate" title="Le Monde à La Carte" href="https://anchor.fm/s/53ca1838/podcast/rss" />
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
 					<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
 
