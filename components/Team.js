@@ -2,7 +2,10 @@ export const Team = () => {
 	return (
 		<div className="my-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
 			<div className="grid grid-cols-2 gap-5 mx-auto md:gap-10 lg:grid-cols-4 lg:max-w-screen-lg">
-				<div className="flex flex-col items-center text-center md:text-left md:items-stretch">
+				<a
+					href="https://instagram.com/vanonborget"
+					className="flex flex-col items-center text-center md:text-left md:items-stretch"
+				>
 					<img className="object-cover w-24 h-24 rounded-full shadow" src="/images/vanon.jpg" alt="Person" />
 					<div className="flex flex-col justify-center mt-2">
 						<p className="text-lg font-bold">Vanon Borget</p>
@@ -12,8 +15,11 @@ export const Team = () => {
 							donkey's years sod's law.
 						</p> */}
 					</div>
-				</div>
-				<div className="flex flex-col items-center text-center md:text-left md:items-stretch">
+				</a>
+				<a
+					href="https://instagram.com/clement.calles"
+					className="flex flex-col items-center text-center md:text-left md:items-stretch"
+				>
 					<img className="object-cover w-24 h-24 rounded-full shadow" src="/images/clement.jpg" alt="Person" />
 					<div className="flex flex-col justify-center mt-2">
 						<p className="text-lg font-bold">Clément Calles</p>
@@ -23,8 +29,11 @@ export const Team = () => {
 							craft beer. krausen goblet grainy ibu.
 						</p> */}
 					</div>
-				</div>
-				<div className="flex flex-col items-center text-center md:text-left md:items-stretch">
+				</a>
+				<div
+					href="https://instagram.com/can10.frd"
+					className="flex flex-col items-center text-center md:text-left md:items-stretch"
+				>
 					<img className="object-cover w-24 h-24 rounded-full shadow" src="/images/candice.jpg" alt="Person" />
 					<div className="flex flex-col justify-center mt-2">
 						<p className="text-lg font-bold">Candice Fradet</p>
@@ -35,7 +44,10 @@ export const Team = () => {
 						</p> */}
 					</div>
 				</div>
-				<div className="flex flex-col items-center text-center md:text-left md:items-stretch">
+				<a
+					href="https://instagram.com/matteogauthier_"
+					className="flex flex-col items-center text-center md:text-left md:items-stretch"
+				>
 					<img className="object-cover w-24 h-24 rounded-full shadow" src="/images/matteo.jpg" alt="Person" />
 					<div className="flex flex-col justify-center mt-2">
 						<p className="text-lg font-bold">Mattèo Gauthier</p>
@@ -45,7 +57,7 @@ export const Team = () => {
 							chic artisan duis pickled.
 						</p> */}
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	);
