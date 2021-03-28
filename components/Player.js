@@ -1,13 +1,14 @@
 import { useState } from "react";
+import Image from "next/image"
 import clsx from "clsx";
 const Player = () => {
 	const [tooltip, setTooltip] = useState(false);
 
 	return (
 		<div className="flex flex-col items-center justify-start px-4 mt-8 space-x-0 md:px-0 md:space-x-6 md:flex-row">
-			<div className="h-64 mb-2 rounded-lg md:mb-0">
+			<div className="h-64 mb-2 rounded-lg shadow md:mb-0">
 				<div className="relative z-0 w-64 h-64 transition-shadow duration-300 rounded-lg hover:shadow-xl">
-					<img src="/images/logo.jpg" alt="logo of the podcast" className="rounded-lg " />
+					<Image quality={100} height={256} width={256} src="/images/logo.jpg" alt="logo of the podcast" className="rounded-lg " />
 					<div
 						href="/"
 						aria-label="Play Video"
@@ -38,7 +39,7 @@ const Player = () => {
 						)}
 						href={process.env.spotifyLink}
 					>
-						<img src="/images/Spotify_Icon_RGB_Green.png" className="w-6 h-6" alt="" />
+						<Image src="/images/Spotify_Icon_RGB_Green.png" height={24} width={24} className="w-6 h-6" alt="spotify listen to" />
 						<span>Écouter sur Spotify</span>
 					</a>
 					<a
@@ -48,7 +49,7 @@ const Player = () => {
 						)}
 						href={process.env.deezerLink}
 					>
-						<img src="/images/EQ.svg" className="w-6 h-6" alt="" />
+						<Image src="/images/EQ.svg" height={24} width={24} className="w-6 h-6" alt="Deezer listen to" />
 						<span>Écouter sur Deezer</span>
 					</a>
 				</div>

@@ -1,3 +1,4 @@
+import Image from "next/image"
 export const Team = () => {
 	return (
 		<div className="my-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
@@ -6,7 +7,7 @@ export const Team = () => {
 					href="https://instagram.com/vanonborget"
 					className="flex flex-col items-center text-center md:text-left md:items-stretch"
 				>
-					<img className="object-cover w-24 h-24 rounded-full shadow" src="/images/vanon.jpg" alt="Person" />
+					<Image layout="fixed" quality={100} className="object-cover w-24 h-24 rounded-full shadow" height={96} width={96} src="/images/vanon.jpg" alt="Person" />
 					<div className="flex flex-col justify-center mt-2">
 						<p className="text-lg font-bold">Vanon Borget</p>
 						<p className="mb-4 text-xs text-gray-500">Présentateur</p>
@@ -20,7 +21,7 @@ export const Team = () => {
 					href="https://instagram.com/clement.calles"
 					className="flex flex-col items-center text-center md:text-left md:items-stretch"
 				>
-					<img className="object-cover w-24 h-24 rounded-full shadow" src="/images/clement.jpg" alt="Person" />
+					<Image layout="fixed" quality={100} className="object-cover w-24 h-24 rounded-full shadow" height={96} width={96} src="/images/clement.jpg" alt="Person" />
 					<div className="flex flex-col justify-center mt-2">
 						<p className="text-lg font-bold">Clément Calles</p>
 						<p className="mb-4 text-xs text-gray-500">Chroniqueur, Ingé son</p>
@@ -34,7 +35,7 @@ export const Team = () => {
 					href="https://instagram.com/can10.frd"
 					className="flex flex-col items-center text-center md:text-left md:items-stretch"
 				>
-					<img className="object-cover w-24 h-24 rounded-full shadow" src="/images/candice.jpg" alt="Person" />
+					<Image layout="fixed" quality={100} height={96} width={96} className="object-cover w-24 h-24 rounded-full shadow" src="/images/candice.jpg" alt="Person" />
 					<div className="flex flex-col justify-center mt-2">
 						<p className="text-lg font-bold">Candice Fradet</p>
 						<p className="mb-4 text-xs text-gray-500">Chroniqueuse</p>
@@ -48,7 +49,7 @@ export const Team = () => {
 					href="https://instagram.com/matteogauthier_"
 					className="flex flex-col items-center text-center md:text-left md:items-stretch"
 				>
-					<img className="object-cover w-24 h-24 rounded-full shadow" src="/images/matteo.jpg" alt="Person" />
+					<Image layout="fixed" quality={100} className="object-cover w-24 h-24 rounded-full shadow" height={96} width={96} src="/images/matteo.jpg" alt="Person" />
 					<div className="flex flex-col justify-center mt-2">
 						<p className="text-lg font-bold">Mattèo Gauthier</p>
 						<p className="mb-4 text-xs text-gray-500">Chroniqueur</p>
