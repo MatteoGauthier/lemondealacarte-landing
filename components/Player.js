@@ -41,7 +41,7 @@ const Player = () => {
 					</p>
 				</div>
 				<div className="flex flex-col mt-4 ">
-					<div className="flex flex-col space-y-2 md:space-x-2 md:flex-row">
+					<div className="flex flex-col space-y-2 md:space-x-2 md:space-y-0 md:flex-row">
 						<a className={podcastButtonStyle} href={process.env.googlePodcastLink}>
 							<Image
 								src="/images/google-podcast.svg"
@@ -63,7 +63,7 @@ const Player = () => {
 							<span>Écouter sur Apple Podcast</span>
 						</a>
 					</div>
-					<div className="flex flex-col mt-2 space-y-2 md:space-x-2 md:flex-row">
+					<div className="flex flex-col mt-2 space-y-2 md:space-x-2 md:space-y-0 md:flex-row">
 						<a className={podcastButtonStyle} href={process.env.spotifyLink}>
 							<Image
 								src="/images/Spotify_Icon_RGB_Green.png"
