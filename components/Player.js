@@ -7,7 +7,7 @@ const Player = () => {
 	const podcastButtonStyle = clsx("podcast-button", tooltip && "ring-opacity-100");
 
 	return (
-		<div className="flex flex-col items-center justify-start px-4 mt-8 space-x-0 md:px-0 md:space-x-6 md:flex-row">
+		<div className="flex flex-col items-center justify-start px-4 mt-2 space-x-0 md:mt-8 md:px-0 md:space-x-6 md:flex-row">
 			<div className="h-64 mb-2 rounded-lg shadow md:mb-0">
 				<div className="relative z-0 w-64 h-64 transition-shadow duration-300 rounded-lg hover:shadow-xl">
 					<Image
