@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html>
+			<Html lang="fr">
 				<Head>
 					<link
 						type="application/rss+xml"
@@ -18,9 +18,7 @@ class MyDocument extends Document {
 					/>
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
 					<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-					<title>
-						Le Monde à La Carte - Podcast sur le voyage et la culture, découvrez votre planète sans changer d'hémisphère
-					</title>
+
 					<meta
 						name="description"
 						content="Découvrez votre planète sans changer d’hémisphère. Une émission culturelle créée par des étudiants

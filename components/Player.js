@@ -1,14 +1,23 @@
 import { useState } from "react";
-import Image from "next/image"
+import Image from "next/image";
 import clsx from "clsx";
 const Player = () => {
 	const [tooltip, setTooltip] = useState(false);
+
+	const podcastButtonStyle = clsx("podcast-button", tooltip && "ring-opacity-100");
 
 	return (
 		<div className="flex flex-col items-center justify-start px-4 mt-8 space-x-0 md:px-0 md:space-x-6 md:flex-row">
 			<div className="h-64 mb-2 rounded-lg shadow md:mb-0">
 				<div className="relative z-0 w-64 h-64 transition-shadow duration-300 rounded-lg hover:shadow-xl">
-					<Image quality={100} height={256} width={256} src="/images/logo.jpg" alt="logo of the podcast" className="rounded-lg " />
+					<Image
+						quality={100}
+						height={256}
+						width={256}
+						src="/images/logo.jpg"
+						alt="logo of the podcast"
+						className="rounded-lg "
+					/>
 					<div
 						href="/"
 						aria-label="Play Video"
@@ -31,27 +40,45 @@ const Player = () => {
 						bordelais. Votre petite dose de culture générale.
 					</p>
 				</div>
-				<div className="flex mt-4 space-x-2">
-					<a
-						className={clsx(
-							"flex items-center ring-opacity-0 transition-all duration-300 ring-2 ring-blue-500 p-1 space-x-2 border border-gray-200 rounded-md",
-							tooltip && "ring-opacity-100"
-						)}
-						href={process.env.spotifyLink}
-					>
-						<Image src="/images/Spotify_Icon_RGB_Green.png" height={24} width={24} className="w-6 h-6" alt="spotify listen to" />
-						<span>Écouter sur Spotify</span>
-					</a>
-					<a
-						className={clsx(
-							"flex items-center ring-opacity-0 transition-all duration-300 ring-2 ring-blue-500 p-1 space-x-2 border border-gray-200 rounded-md",
-							tooltip && "ring-opacity-100"
-						)}
-						href={process.env.deezerLink}
-					>
-						<Image src="/images/EQ.svg" height={24} width={24} className="w-6 h-6" alt="Deezer listen to" />
-						<span>Écouter sur Deezer</span>
-					</a>
+				<div className="flex flex-col mt-4 ">
+					<div className="flex flex-col space-y-2 md:space-x-2 md:flex-row">
+						<a className={podcastButtonStyle} href={process.env.googlePodcastLink}>
+							<Image
+								src="/images/google-podcast.svg"
+								height={24}
+								width={24}
+								className="w-6 h-6"
+								alt="Deezer listen to"
+							/>
+							<span>Écouter sur Google Podcast</span>
+						</a>
+						<a className={podcastButtonStyle} href={process.env.applePodcastLink}>
+							<Image
+								src="/images/Apple_Music_Icon_RGB_sm_073120.svg"
+								height={24}
+								width={24}
+								className="w-6 h-6"
+								alt="Deezer listen to"
+							/>
+							<span>Écouter sur Apple Podcast</span>
+						</a>
+					</div>
+					<div className="flex flex-col mt-2 space-y-2 md:space-x-2 md:flex-row">
+						<a className={podcastButtonStyle} href={process.env.spotifyLink}>
+							<Image
+								src="/images/Spotify_Icon_RGB_Green.png"
+								height={24}
+								width={24}
+								className="w-6 h-6"
+								alt="spotify listen to"
+							/>
+							<span>Écouter sur Spotify</span>
+						</a>
+						<a className={podcastButtonStyle} href={process.env.deezerLink}>
+							<Image src="/images/EQ.svg" height={24} width={24} className="w-6 h-6" alt="Deezer listen to" />
+							<span>Écouter sur Deezer</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
